@@ -1,0 +1,122 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.about-me {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+/* Estilos de la Calculadora */
+.calculator-section {
+    text-align: center;
+}
+
+.calculator {
+    width: 300px;
+    margin: 20px auto;
+    background-color: #22252d;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    background-color: #22252d;
+    border: none;
+    color: #ffffff;
+    text-align: right;
+    font-size: 2rem;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #292d36;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #373c47;
+}
+
+/* Colores específicos para operadores */
+.btn-operator {
+    color: #df5555;
+    font-weight: bold;
+}
+
+.btn-clear {
+    color: #26ffd7;
+}
+
+.btn-equal {
+    grid-row: span 2;
+    background-color: #26ffd7;
+    color: #22252d;
+    font-weight: bold;
+}
+
+.btn-equal:hover {
+    background-color: #1fcfaf;
+}
+
+.btn-zero {
+    grid-column: span 1;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
